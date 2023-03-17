@@ -1,0 +1,841 @@
+{
+	"info": {
+		"_postman_id": "32aeeeac-a3e6-4da2-b6b1-cc414cc2b2ea",
+		"name": "HRMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18289605"
+	},
+	"item": [
+		{
+			"name": "Team",
+			"item": [
+				{
+					"name": "Show All Team",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/team",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"team"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Single Team",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/team/6410217943ea2613a84be188",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"team",
+								"6410217943ea2613a84be188"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Team",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "asdfasdf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/team",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"team"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Team",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/team/64117d3029d2ef48a847b4e3",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"team",
+								"64117d3029d2ef48a847b4e3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Team",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "WordPress Team",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/team/6410217943ea2613a84be188",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"team",
+								"6410217943ea2613a84be188"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "change name",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Attendence",
+			"item": [
+				{
+					"name": "Delete Attendence",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/attendence/6411680ca45e261d04f05727",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"attendence",
+								"6411680ca45e261d04f05727"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Single Attendence",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/attendence/640ae3ce84b8710f8416991f",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"attendence",
+								"640ae3ce84b8710f8416991f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Attendence",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sign_in",
+									"value": "05/05/05",
+									"type": "text"
+								},
+								{
+									"key": "sign_out",
+									"value": "3/3/3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/attendence/640af076c2f84249d018dfca",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"attendence",
+								"640af076c2f84249d018dfca"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "change name",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show All Attendence",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/attendence",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"attendence"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Attendence",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "641038ca788fbd2e9065fff0",
+									"type": "text"
+								},
+								{
+									"key": "sign_in",
+									"value": "1/1/1",
+									"type": "text"
+								},
+								{
+									"key": "sign_out",
+									"value": "5/5/5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/attendence",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"attendence"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Leaves",
+			"item": [
+				{
+					"name": "Add Leave",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n        \"user_id\": \"641038f2788fbd2e9065fff6\",\r\n        \"leave_reason\": \"Wedding Ceremony of brother\",\r\n        \"from\": \"24/02/02\",\r\n        \"till\": \"30/02/02\",\r\n        \"leave_status\": \"approved\",\r\n        \"approved_by\": \"Shehzad\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/leave",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"leave"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show All Leave",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{domain}}/leave",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"leave"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Attendence",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/leave/640afe6a60d92f409caa7872",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"leave",
+								"640afe6a60d92f409caa7872"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Single Leave",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/leave/640e976da33f874b34ba100d",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"leave",
+								"640e976da33f874b34ba100d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Leave",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "leave_reason",
+									"value": "I want 2 days leave",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/leave/640e917fbaabe639ec434a28",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"leave",
+								"640e917fbaabe639ec434a28"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "change name",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Add User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\" : \"Haider\",\r\n    \"last_name\" : \"Bhai\",\r\n    \"email\" : \"new@user.com\",\r\n    \"password\" : \"newpass\",\r\n    \"team\": \"6410218443ea2613a84be18e\",\r\n    \"roles\": \"64101b9c9b8b3f446c6f7663\",\r\n    \"address\" : \"Allama Iqbal Town, Lahore\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/user",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show All Users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/user",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Single User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/user/640ebfecfb03b53e5480f79c",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"user",
+								"640ebfecfb03b53e5480f79c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/user/64115e1368f80415401d04e2",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"user",
+								"64115e1368f80415401d04e2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "last_name",
+									"value": "Nasir",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/user/640ebfecfb03b53e5480f79c",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"user",
+								"640ebfecfb03b53e5480f79c"
+							],
+							"query": [
+								{
+									"key": "last_",
+									"value": "change name",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Roles",
+			"item": [
+				{
+					"name": "Add Role",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "user",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ali@example.com",
+									"type": "text"
+								},
+								{
+									"key": "created_by",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/role",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show All Roles",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/role",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Single Role",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/role/640ed933445af5412421e115",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"role",
+								"640ed933445af5412421e115"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Role",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/role/640ed98d445af5412421e12e",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"role",
+								"640ed98d445af5412421e12e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Role",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "user",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/role/640ed933445af5412421e115",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"role",
+								"640ed933445af5412421e115"
+							],
+							"query": [
+								{
+									"key": "last_",
+									"value": "change name",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Logins",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responseJson = pm.response.json();\r",
+							"\r",
+							"pm.environment.set(\"token\", responseJson.token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@roadie.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "new@user.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "newpass",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{domain}}/login",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
